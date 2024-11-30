@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  font-family: "Sansita", sans-serif;
+  background-image: url(https://img.freepik.com/premium-vector/seamless-pattern-with-desserts-pastries-cakes-sweets-desserts-light-background-line-doodles_248911-816.jpg?w=826);
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+
+.Nome {
+    display: flex;
+    background-color: #9b4922;
+}
+
+.Frase_inicio {
+  align-content: center;
+  font-size: 60px;
+  color: bisque;
+  padding-left: 25px;
+}
+
+.BarraAjuda {
+  border-bottom: solid white 1px;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  background-color: #9b4922;
+  justify-content: center;
+}
+
+.Nosso_proposito {
+  padding: 0;
+  background-color: white;
+  margin: 1cm;
+  border-radius: 5px;
+  width: 1500px;
+  height: 750px;
+  align-items: center;
+  margin-left: 0;
+}
+
+.Nosso_proposito1 {
+  
+  display: flex;
+  background-color: bisque;
+
+}
+
+.Nosso_proposito2 {
+  display: flex;
+  background-color: bisque;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+
+.Titulo {
+  border-right: solid black 1px;
+  width: 300px; 
+  height: 300px; 
+  justify-content: center; 
+  align-items: center; 
+  display: flex;
+  margin: 1cm;
+}
+
+.Titulo1 {
+  border-right: solid black 1px;
+  width: 300px; 
+  height: 300px; 
+  justify-content: center; 
+  align-items: center; 
+  display: flex;
+  margin: 1cm;
+}
+
+
+.search-box {
+
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -20%);
+
+  background: white;
+  height: 50px;
+  border-radius: 40px;
+  padding: 10px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-text {
+  border: 0;
+  background: none;
+  outline: 0;
+
+  transition: 0.4s;
+
+  padding: 0;
+
+  font-size: 16px;
+
+  width: 0;
+}
+
+::-webkit-input-placeholder {
+  font-size: 17px;
+  font-family: "Sansita", sans-serif;
+  color: rgb(187, 187, 187);
+}
+
+.search-btn {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.lupa-azul {
+
+  display: none;
+}
+
+.search-box:hover > .search-text {
+  padding-left: 20px;
+  width: 320px;
+}
+
+.search-box:hover > .search-btn {
+  background: #447ce7;
+}
+
+.search-box:hover > .search-btn .lupa-azul {
+  display: none;
+}
+
+
+.slider {
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 400px;
+  display: flex;
+}
+
+.slides input { 
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+
+
+.slide img {
+  width: 800px;
+}
+
+.manual-navegation {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px white solid;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+
+  margin-right: 30px;
+}
+
+.manual-btn:hover {
+  background: white;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0%;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}
+
+.navegation-auto div {
+  border: 2px solid #447ce7;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navegation-auto {
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+}
+
+.navegation-auto div:not(:last-child) {
+  margin-right: 30px;
+}
+
+#radio1:checked ~ .navegation-auto .auto-btn1 {
+  background-color: white;
+}
+
+#radio2:checked ~ .navegation-auto .auto-btn2 {
+  background-color: white;
+}
+
+#radio3:checked ~ .navegation-auto .auto-btn3 {
+  background-color: white;
+}
+
+#radio4:checked ~ .navegation-auto .auto-btn4 {
+  background-color: white;
+}
+
+.section-slide {
+  background: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
